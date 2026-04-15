@@ -16,6 +16,14 @@ app.use(express.json());
 await connectDB(process.env.MONGO_URL);
 
 // api/songs (Read all songs)
+const connectedDB = async () => {
+    try {   
+        await connectDB(process.env.MONGO_URL);
+        console.log("Mongo connected");
+    } catch (err) {
+        console.error("Connection error:", err.message);
+    }
+};
 
 
 // api/songs (Insert song)
