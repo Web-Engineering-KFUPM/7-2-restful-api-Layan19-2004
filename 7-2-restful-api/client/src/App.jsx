@@ -41,7 +41,7 @@ LAB SETUP INSTRUCTIONS
  *  Steps:
  *    - Create the environment file with name ".env" inside the 7-2-restful-api\server folder
  *    - Create two variables:
- *        - MONGO_URL=
+ *        - MONGO_URL= 
  *        - PORT=5174
  *    - Copy connection string from your mongo cloud account: clusters->connection->MongoDB for VS Code
  *    - Save the connection string to MONGO_URL variable.
